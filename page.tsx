@@ -1,0 +1,4 @@
+'use client';
+import React from 'react';
+const TALLY_FORM_URL = 'https://tally.so/r/your-form-id';
+export default function ApplyPage(){return (<main className="min-h-screen bg-neutral-950 text-neutral-100"><div className="mx-auto max-w-5xl px-4 py-10"><h1 className="text-3xl md:text-4xl font-semibold">Apply to join</h1><p className="mt-3 text-neutral-300">Fill out the application below. We review within 24–48 hours.</p><div className="mt-6 rounded-2xl border border-neutral-800 overflow-hidden bg-neutral-900"><iframe src={`${TALLY_FORM_URL}?hide-title=1`} className="w-full" style={{height:'80vh'}} allow="fullscreen; clipboard-write;" /></div><p className="mt-3 text-xs text-neutral-500">If the form doesn’t load, <a className="underline" href={TALLY_FORM_URL} target="_blank" rel="noreferrer">open it in a new tab</a>.</p></div></main>);}
